@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio. 
-
-int main() {
-    #include <stdio.h>
 int main(){
     char estado, codigoDaCarta[4], NomeCidade[10];
 
@@ -16,10 +9,10 @@ int main(){
 
     printf("\nCARTA 1\n");
     printf("Insira uma letra de A a H para representar um dos oito estados\n");
-    scanf(" %c",&estado); // precisa do &
+    scanf(" %c",&estado); 
     
     printf("Insira a lera do estado seguido de um numero de 01 ate 04\n");
-    scanf("%s",&codigoDaCarta); // teste ok
+    scanf("%s",&codigoDaCarta); 
     
     printf("Escolha o nome da cidade\n");
     scanf("%s",&NomeCidade);
@@ -53,10 +46,10 @@ int main(){
     float areaKm2, pib2;
     printf("\n**CARTA 2\n**");
     printf("Insira uma letra de A a H para representar um dos oito estados\n");
-    scanf(" %c",&estado2); // precisa do &
+    scanf(" %c",&estado2); 
     
     printf("Insira a lera do estado seguido de um numero de 01 ate 04\n");
-    scanf("%s",&codigoDaCarta2); // teste ok
+    scanf("%s",&codigoDaCarta2);
     
     printf("Escolha o nome da cidade\n");
     scanf("%s",&NomeCidade2);
@@ -75,13 +68,10 @@ int main(){
 
     float densidadePop2 = ((float)populacao2/areaKm2) * 100, pibPerCapita2 = (pib2 * 100000000)/(float)populacao2; // pop é int, areakm é float, pib é float
 
-    float superPoder2 = (float)populacao2 +  areaKm2 + pib2 + (float)PontosTuristicos2 + pibPerCapita2 + (densidadePop2 * -1);
-
     printf("\n**CARTA 2\nEstado:   %c\ncodigo Da Carta:   %s\nNomeCidade:   %s\n", estado2,codigoDaCarta2,NomeCidade2); //char
     printf("Numero De Habitantes:   %d\nPontos Turisticos:   %d\n", populacao2, PontosTuristicos2);// int
     printf("Area em km:   %.2f\nPIB:   %.2f bilhoes de reais\n", areaKm2, pib2);//float, areaKM, PIB
     printf("Densidade Populacional:   %.2fhab/km\nPIB perCapita: %.2f**\n",densidadePop2,pibPerCapita2);// float, densidade, percCapita
-    printf("SUPER PODER 2: %.2f\n", superPoder2);// superPoder2
 
     /*-------------------------------------------------COMPARACAO-----------------------------*/
     int escolhaAtributo;
@@ -296,6 +286,3 @@ switch (escolhaAtributo2){
     return 0;
 }
 
-
-    return 0;
-}
