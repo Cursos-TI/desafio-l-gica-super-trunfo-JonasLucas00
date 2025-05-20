@@ -1,4 +1,4 @@
-# DRegras do jogo
+# Regras do jogo
 1. usuario insere os dados abaixo;
     Estado (string)
     Código da carta (string)
